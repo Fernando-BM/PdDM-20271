@@ -16,6 +16,8 @@ Este repositorio contiene los proyectos, prácticas y código fuente desarrollad
 
 **Estructura del Proyecto**
   * `t(n)`: Contiene el nùmero de tarea
+  * 
   ** `/app`: Contiene el código fuente de las aplicaciones desarrolladas.
+    
   ** `/docs`: Documentación adicional y reportes de las prácticas.
 
