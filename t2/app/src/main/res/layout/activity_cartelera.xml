@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <!-- Título Principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CINE - CARTELERA"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de Texto para Nombre -->
+    <EditText
+        android:id="@+id/etNombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del cliente"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Selector de Formato (RadioGroup y RadioButtons) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el formato de función:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="12dp">
+
+        <RadioButton
+            android:id="@+id/rb2D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sala Tradicional 2D ($70)"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rb3D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sala IMAX / 3D ($110)" />
+    </RadioGroup>
+
+    <!-- Extras (CheckBox) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dulcería Opcional:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <CheckBox
+        android:id="@+id/cbPalomitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo Palomitas Grandes + Refresco" />
+
+    <CheckBox
+        android:id="@+id/cbDulces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate / Dulces extras"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botones de Acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCELAR"
+            android:backgroundTint="#9E9E9E"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONTINUAR"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

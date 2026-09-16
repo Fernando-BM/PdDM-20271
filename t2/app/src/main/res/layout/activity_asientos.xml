@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA">
+
+    <!-- Título de Pantalla 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECCIÓN DE ASIENTOS Y PAGO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Indicador de Pantalla / Zona -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#333333"
+        android:gravity="center"
+        android:text="P A N T A L L A"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige tu horario:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:00 hrs"
+            android:checked="true"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19:30 hrs" />
+    </RadioGroup>
+
+    <!-- Resumen o cantidad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de boletos: "
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:inputType="number"
+            android:gravity="center"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMPORTE TOTAL: $220.00 MXN"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Botones Finales -->
+    <Button
+        android:id="@+id/btnHacerPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HACER PEDIDO / PAGAR"
+        android:backgroundTint="#388E3C"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        android:backgroundTint="#757575" />
+
+</LinearLayout>
